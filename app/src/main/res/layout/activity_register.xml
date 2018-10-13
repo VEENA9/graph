@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--tools:context=".Register"-->
+
+
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="262dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="136dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_marginLeft="4dp" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="262dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="267dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="56dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="56dp" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="148dp"
+        android:ems="10"
+        android:hint="confirm password"
+        android:inputType="textPassword"
+        android:layout_marginLeft="56dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="277dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="104dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:onClick="register"
+        android:text="Register"/>
+
+</LinearLayout>
