@@ -38,8 +38,8 @@ public class MenuContent {
 
     static {
 //        addItem(new MenuItem("1", "Hello world graph", HelloWorldFragment.class));
-//        addItem(new MenuItem("2", "Zooming and scrolling", ZoomingAndScrollingFragment.class));
-        addItem(new MenuItem("", "Graph", RealtimeFragment.class));
+        addItem(new MenuItem("", "Fixed ppg graph", ZoomingAndScrollingFragment.class));
+//        addItem(new MenuItem("", "Graph", RealtimeFragment.class));
 //        addItem(new MenuItem("4", "Time and dates", TimeAndDatesFragment.class));
 //        addItem(new MenuItem("5", "Second scale and labels", SecondScaleAndLabelsFragment.class));
 //        addItem(new MenuItem("6", "Line graph", LineGraphFragment.class));

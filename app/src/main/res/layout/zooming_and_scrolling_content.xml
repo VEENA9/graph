@@ -21,21 +21,22 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/preview"
+                android:layout_height="300dp"
+                android:src="@drawable/ppg"
                 android:id="@+id/graph"/>
 
             <TextView
                 android:id="@+id/title"
-                android:layout_width="wrap_content"
+                android:layout_width="170dp"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
                 android:layout_below="@+id/graph"
                 android:maxLines="3"
-                android:layout_marginTop="8dp"
-                android:text="Zooming X/Y"
-                android:textColor="#222"
+                android:text="fixed zoom ppg"
+                android:textColor="#222222"
+                android:textSize="22dp"
                 android:textStyle="bold"
-                android:textSize="22dp" />
+                android:layout_alignParentLeft="true" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -43,8 +44,8 @@
                 android:layout_below="@+id/title"
                 android:layout_toLeftOf="@+id/imgSource"
                 android:maxLines="3"
-                android:text="Zooming and scrolling x and y axis"
-                android:textColor="#666"
+                android:text="you can zoom it"
+                android:textColor="#666666"
                 android:textSize="14dp" />
 
             <ImageView
@@ -57,8 +58,8 @@
                 android:layout_alignTop="@id/title"/>
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
                 android:src="@drawable/source"
                 android:id="@id/imgSource"
                 android:layout_margin="5dp"
@@ -70,28 +71,28 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
         android:id="@+id/cardZoomXGraph"
         card_view:cardBackgroundColor="@android:color/white"
         card_view:cardElevation="2sp"
         card_view:cardUseCompatPadding="true">
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
             android:layout_margin="16dp">
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
                 android:src="@drawable/preview"
                 android:id="@+id/graph2"/>
 
             <TextView
                 android:id="@+id/title2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
                 android:layout_below="@+id/graph2"
                 android:maxLines="3"
                 android:layout_marginTop="8dp"
@@ -133,22 +134,22 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
         android:id="@+id/cardScrollXGraph"
         card_view:cardBackgroundColor="@android:color/white"
         card_view:cardElevation="2sp"
         card_view:cardUseCompatPadding="true">
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
             android:layout_margin="16dp">
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/preview"
+                android:layout_height="300dp"
+                android:src="@drawable/ppg"
                 android:id="@+id/graph3"/>
 
             <TextView
@@ -158,7 +159,7 @@
                 android:layout_below="@+id/graph3"
                 android:maxLines="3"
                 android:layout_marginTop="8dp"
-                android:text="Scrolling X"
+                android:text="Fixed ppg"
                 android:textColor="#222"
                 android:textStyle="bold"
                 android:textSize="22dp" />
@@ -169,7 +170,7 @@
                 android:layout_below="@+id/title3"
                 android:layout_toLeftOf="@+id/imgSource3"
                 android:maxLines="3"
-                android:text="Scrolling x axis with auto y bounds"
+                android:text="bounds ppg"
                 android:textColor="#666"
                 android:textSize="14dp" />
 
@@ -183,8 +184,8 @@
                 android:layout_alignTop="@id/title3"/>
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
                 android:src="@drawable/source"
                 android:id="@id/imgSource3"
                 android:layout_margin="5dp"

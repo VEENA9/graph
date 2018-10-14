@@ -7,6 +7,7 @@ import com.jjoe64.graphview.LegendRenderer;
 import com.jjoe64.graphview.series.BarGraphSeries;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
+import com.jjoe64.graphview_demos.Arrayppg;
 import com.jjoe64.graphview_demos.FullscreenActivity;
 import com.jjoe64.graphview_demos.R;
 
@@ -23,26 +24,26 @@ public class ScalingXY extends BaseExample {
     @Override
     public void initGraph(GraphView graph) {
         // first series is a line
-        DataPoint[] points = new DataPoint[100];
+        DataPoint[] points = new DataPoint[2000];
         for (int i = 0; i < points.length; i++) {
-            points[i] = new DataPoint(i, Math.sin(i*0.5) * 20*(Math.random()*10+1));
+            points[i] = new DataPoint(i, Arrayppg.pass());
         }
         LineGraphSeries<DataPoint> series = new LineGraphSeries<>(points);
 
         // set manual X bounds
         graph.getViewport().setYAxisBoundsManual(true);
-        graph.getViewport().setMinY(-150);
-        graph.getViewport().setMaxY(150);
+        graph.getViewport().setMinY(425);
+        graph.getViewport().setMaxY(625);
 
         graph.getViewport().setXAxisBoundsManual(true);
         graph.getViewport().setMinX(4);
-        graph.getViewport().setMaxX(80);
+        graph.getViewport().setMaxX(2000);
 
         // enable scaling
         graph.getViewport().setScalable(true);
         graph.getViewport().setScalableY(true);
 
-        series.setTitle("Random Curve");
+        series.setTitle("ppg");
 
         graph.addSeries(series);
 

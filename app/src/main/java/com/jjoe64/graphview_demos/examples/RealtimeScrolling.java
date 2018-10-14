@@ -1,11 +1,11 @@
 package com.jjoe64.graphview_demos.examples;
 
 import android.os.Handler;
-import android.util.Log;
 
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
+import com.jjoe64.graphview_demos.Arrayppg;
 import com.jjoe64.graphview_demos.FullscreenActivity;
 import com.jjoe64.graphview_demos.Passtemp;
 import com.jjoe64.graphview_demos.R;
@@ -17,8 +17,6 @@ import java.util.Random;
  */
 public class RealtimeScrolling extends BaseExample {
     private final Handler mHandler = new Handler();
-    double mLastRandom = 1;
-    Random mRand = new Random();
     private Runnable mTimer;
     private double graphLastXValue = 5d;
     private LineGraphSeries<DataPoint> mSeries;
@@ -53,21 +51,31 @@ public class RealtimeScrolling extends BaseExample {
                 mHandler.postDelayed(this, 5000);
             }
         };
-        mHandler.postDelayed(mTimer, 200);
+        mHandler.postDelayed(mTimer, 20);
     }
 
     public void onPause() {
         mHandler.removeCallbacks(mTimer);
     }
 
+    double mLastRandom = 2;
+    Random mRand = new Random();
+//    private double getRandom() {
+//        return mLastRandom += mRand.nextDouble()*0.5 - 0.25;
+//    }
+
+
+//    double mLastRandom = 1;
+//    Random mRand = new Random();
+
     private double getRandom() {
 
-        Log.d("DATA_Y", Passtemp.makeJsonObjectRequest()+"");
-//        return mLastRandom += 0.5;
-        return 5;
+//        double i = Arrayppg.passtemp();
+        return 28;
 //            return Passtemp.makeJsonObjectRequest();
 
     }
 }
 
 
+//return mLastRandom += mRand.nextDouble()*0.5 - 0.25;
